@@ -4,8 +4,89 @@
 //Author: Aaron Convery
 
 
+Week1Practical();
 
+void Week1Practical()
+{
+    //Task 1
+    Console.WriteLine("Please enter your name: ");
+    string name = Convert.ToString(Console.ReadLine());
+    Console.WriteLine("Please enter your age: ");
+    int age = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine($"Hello {name}, you will be {age + 5} in 5 years");
 
+    //Task 2
+    if (age >= 0 || age <= 110)
+    {
+        if (age < 13)
+        {
+            Console.WriteLine("You are a child");
+        }
+        else if (age >= 13 || age <= 19)
+        {
+            Console.WriteLine("You are a teenager");
+        }
+        else if (age > 19)
+        {
+            Console.WriteLine("You are an adult");
+        }
+    }
+    else
+    {
+        Console.WriteLine("Invalid age");
+    }
+
+    //Task 3
+    Console.WriteLine("Please enter an integer: ");
+    int number = Convert.ToInt32(Console.ReadLine());
+
+    if (number < 0)
+    {
+        Console.WriteLine("This number is negative");
+    }
+    else if (number > 0)
+    {
+        Console.WriteLine("This number is positive");
+    }
+    else
+    {
+        Console.WriteLine("This number is zero");
+    }
+
+    //Task 4
+    Console.WriteLine("Please enter a year: ");
+    int year = Convert.ToInt32(Console.ReadLine());
+
+    if (year < 0)
+    {
+        Console.WriteLine("This is not a valid year");
+    }
+    else if (year % 4 == 0 || year % 100 == 1)
+    {
+        Console.WriteLine("This is a leap year");
+    }
+    else
+    {
+        Console.WriteLine("This is not a leap year");
+    }
+
+    //Task 5
+    Console.WriteLine("Please enter an integer: ");
+    number = Convert.ToInt32(Console.ReadLine());
+
+    if (number % 2 == 0)
+    {
+        Console.WriteLine("This number is even");
+    }
+    else
+    {
+        Console.WriteLine("This number is odd");
+    }
+
+    //Task 6
+    //Save and Quit
+
+}
 
 
 
